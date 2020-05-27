@@ -223,6 +223,9 @@ footer h3 {
 #Contact h3{
   background-color: #161823;
   font-size: 20px;
+  color: #ffff;
+  padding: 50px 0;
+  marigin-bottom: 10px;
 }
 /* resposiveness styleing */
 @media screen and (max-width: 900px) {
