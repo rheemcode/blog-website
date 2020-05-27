@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: large;
+  text-align: center;
+  padding: 0;
+  color: #161823;
+}
+
+/* <---- Global style ------> */
+img,
+.metadata,
+.blogPost article {
+  width: 65vw;
+}
+
+nav,
+.myinfo h1,
+.blogPost h1,
+.metadata,
+#Contact,
+input[type="submit"] {
+  background-color: #161823;
+}
+nav,
+ul,
+article.myinfo,
+.myinfo article,
+article.blogPost {
+  display: flex;
+}
+.myinfo article,
+article.blogPost {
+  flex-direction: column;
+}
+.myinfo h1,
+ul,
+.nav-links a,
+.blogPost h1,
+.metadata,
+input[type="submit"] {
+  color: #ffff;
+}
+nav,
+ul,
+article.blogPost {
+  justify-content: center;
+}
+p,
+.myinfo h1,
+figcaption h2,
+label,
+input[type="text"],
+textarea {
+  text-align: left;
+}
+/* navigation styling  */
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  z-index: 1;
+}
+ul {
+  list-style: none;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin: 10px 0;
+}
+.nav-links a {
+  margin: 0 30px;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px black;
+}
+
+/* homepage stlying */
+.page-header {
+  background: no-repeat left/cover
+    url(images/woman-programming-on-a-notebook-1181359.jpg);
+  height: 100vh;
+}
+
+.page-header h1 {
+  background: linear-gradient(
+    90deg,
+    rgba(218, 190, 37, 0.644),
+    rgba(141, 1, 1, 0.644)
+  );
+  border-style: double;
+  border-width: 5px;
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 300;
+  position: relative;
+  top: 40vh;
+  color: rgb(238, 238, 248);
+  border-color: black;
+  text-shadow: 1px 1px 10px black;
+  width: 500px;
+  animation: welcome 1s 1 0s linear;
+}
+.page-header h2 {
+  color: #161823;
+  font-size: 2.5rem;
+  position: relative;
+  top: 35vh;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: rgb(255, 254, 254);
+  font-weight: 600;
+  animation: welcome 1s 1 0s linear;
+}
+
+/* all section styling */
+section {
+  margin-bottom: 100px;
+}
+
+/* about me section */
+article.myinfo {
+  margin: auto 50px;
+  background-color: rgba(158, 156, 156, 0.137);
+  align-items: center;
+}
+p {
+  float: left;
+}
+.myinfo figcaption header {
+  visibility: hidden;
+  position: absolute;
+}
+/* profile image */
+article.myinfo img {
+  border: #161823;
+  border-width: 30px;
+  width: 40vw;
+  height: auto;
+  box-shadow: 1px 1px 15px rgb(109, 104, 104);
+  margin-right: 50px;
+}
+.myinfo h1 {
+  margin-bottom: 60px;
+  font-size: 60px;
+}
+
+/* Blog post stlyes */
+.blogPost {
+  margin: 50px 0;
+}
+article.blogPost {
+  margin: 80px 0;
+}
+.blogPost h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+figcaption h2 {
+  font-size: 34px;
+  display: inline-block;
+  width: 60vw;
+  margin-left: -2rem;
+  margin-bottom: 10px;
+}
+.metadata {
+  background-color: rgb(218, 220, 221);
+  color: #161823;
+  margin: auto;
+}
+.metadata h6 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: inline-block;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.blogPost article {
+  margin: 30px auto;
+}
+article p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+#Contact {
+  background-color: rgb(218, 220, 221);
+  margin-bottom: 0;
+  padding: 50px;
+}
+label {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+input[type="text"],
+textarea {
+  width: 60%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  width: 62%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+footer {
+  padding: 10px 0;
+  background-color: #161823;
+}
+footer img {
+  margin: 20px;
+  width: 50px;
+}
+footer h3 {
+  background-color: azure;
+}
+/* resposiveness styleing */
+@media screen and (max-width: 900px) {
+  .myinfo {
+    flex-direction: column;
+  }
+  .page-header h1 {
+    width: 68vw;
+    top: 25vh;
+    font-size: 2rem;
+  }
+  .page-header h2 {
+    font-size: 1.7rem;
+    top: 22vh;
+  }
+  .page-header {
+    height: 60vh;
+  }
+  .nav-links a {
+    margin: 0 12px;
+    font-size: 12px;
+  }
+  article.myinfo img {
+    width: 90vw;
+    margin-right: 0;
+  }
+  article.myinfo {
+    margin: auto 50px;
+  }
+  .myinfo h1 {
+    visibility: hidden;
+    position: absolute;
+  }
+  .myinfo figcaption header {
+    visibility: visible;
+    position: static;
+    font-size: 30px;
+    background-color: rgb(218, 220, 221);
+    color: #161823;
+    padding: 5px;
+    font-weight: 800;
+  }
+  .metadata,
+  img,
+  .blogPost article,
+  p {
+    width: 90vw;
+  }
+  .blogPost h2 {
+    width: 80vw;
+  }
+  .metadata h6,
+  time {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .myinfo article,
+  p {
+    width: 80vw;
+  }
+  input[type="text"],
+  textarea,
+  input[type="submit"] {
+    width: 100%;
+  }
+  label {
+    margin: 0;
+  }
+  .myinfo article {
+    padding: 15px;
+  }
+}
+
+@keyframes welcome {
+  0% {
+    transform: rotate(0) translateY(-60%);
+    opacity: 0.1;
+  }
+  50% {
+    transform: rotate(0) translateY(-30%);
+    opacity: 0.2;
+  }
+  99% {
+    transform: rotate(0) translateY(0);
+  }
+}
