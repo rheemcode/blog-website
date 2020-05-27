@@ -220,6 +220,10 @@ footer img {
 footer h3 {
   background-color: azure;
 }
+#Contact h3{
+  background-color: #161823;
+  font-size: 20px;
+}
 /* resposiveness styleing */
 @media screen and (max-width: 900px) {
   .myinfo {
@@ -247,6 +251,7 @@ footer h3 {
   }
   article.myinfo {
     margin: auto 50px;
+    background-color:#ffff;
   }
   .myinfo h1 {
     visibility: hidden;
