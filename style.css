@@ -220,6 +220,20 @@ footer img {
 footer h3 {
   background-color: azure;
 }
+#Contact h3{
+  background-color: #161823;
+  font-size: 20px;
+  color: #ffff;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+button{
+  float: left;
+  padding: 10px 15px;
+  background-color: #161823;
+  color: #ffff;
+  border: none;
+}
 /* resposiveness styleing */
 @media screen and (max-width: 900px) {
   .myinfo {
@@ -247,6 +261,7 @@ footer h3 {
   }
   article.myinfo {
     margin: auto 50px;
+    background-color:#ffff;
   }
   .myinfo h1 {
     visibility: hidden;
@@ -291,6 +306,7 @@ footer h3 {
     padding: 15px;
   }
 }
+
 
 @keyframes welcome {
   0% {
