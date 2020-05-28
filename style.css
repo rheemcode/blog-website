@@ -225,6 +225,7 @@ footer h3 {
   font-size: 20px;
   color: #ffff;
   padding: 5px 0;
+<<<<<<< HEAD
   margin-bottom: 20px;
 }
 button{
@@ -233,6 +234,9 @@ button{
   background-color: #161823;
   color: #ffff;
   border: none;
+=======
+  marigin-bottom: 10px;
+>>>>>>> effaa0242f0d55049926f7b4d0b3c5c28e45da87
 }
 /* resposiveness styleing */
 @media screen and (max-width: 900px) {
